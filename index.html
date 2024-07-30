@@ -12,6 +12,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Bank Accounts</h1>
@@ -116,7 +117,7 @@
         document.getElementById('createAccountForm').addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // フォームから入力値を取得します
+            // フォームから入力値を取得する
             const accountHolderName = document.getElementById('accountHolderName').value;
             const accountType = document.getElementById('accountType').value;
             const balance = document.getElementById('balance').value;

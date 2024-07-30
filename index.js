@@ -14,7 +14,7 @@ const db = admin.firestore();
 const app = express();
 app.use(bodyParser.json());
 
-// Get all bank accounts
+// Get all bank accounts.
 app.get('/accounts', async (req, res) => {
   try {
     const snapshot = await db.collection('accounts').get();
